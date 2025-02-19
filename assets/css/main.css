@@ -2093,6 +2093,12 @@ input, select, textarea {
 			background: #f6f8fb url("images/image-wrapper.svg");
 		}
 
+		.image-wrapper .video {
+			position: relative;
+			z-index: 2;
+			display: block;
+		}
+
 	#header-wrapper {
 		position: relative;
 		padding: 4em 0 2em 0;
