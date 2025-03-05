@@ -5,7 +5,7 @@
 
 //"book reviews" Google Sheet url
 //change "edit..." part of url to "export?format=csv" to convert to csv
-const url = "https://docs.google.com/spreadsheets/d/1Q7vS5GgJFSLEL1eJ4tjh99xZ-K6R6Q5uPRLeGSD6tCA/export?format=csv";
+const url = "https://docs.google.com/spreadsheets/d/1xYgVq7ZZNNZI8jY-uVnxGCfuosG3fH4GlPqqOXBIMf4/export?format=csv";
 //tag to write each row into
 const tag = document.getElementById("review-rows");
 
@@ -141,7 +141,7 @@ fetch(url).then(result=>result.text()).then(function(csvtext) {
             const rating = document.createElement("h3");
             rating.className = "review-rating";
             rating.id = `review-rating-${index}`;
-            rating.textContent = row.Rating;
+            rating.textContent = row.Rating + "/5";
             divPopupContent.appendChild(rating);
     
             const review = document.createElement("p");
