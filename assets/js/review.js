@@ -143,6 +143,13 @@ fetch(url).then(result=>result.text()).then(function(csvtext) {
             rating.id = `review-rating-${index}`;
             rating.textContent = row.Rating + "/5";
             divPopupContent.appendChild(rating);
+
+            const Status = document.createElement("h4");
+            Status.style.fontStyle = "italic";
+            Status.className = "review-status";
+            Status.id = `review-status-${index}`;
+            Status.textContent = "Status: " + row.Status;
+            divPopupContent.appendChild(Status);
     
             const review = document.createElement("p");
             review.className = "review-text";
