@@ -2695,6 +2695,13 @@ img.portfolio {
 		display: block;
 	}
     
+	.video_portrait {
+		margin: 0 auto;
+		width: 30%;
+		height: 50%;
+		display: block;
+	}
+
 
 /* List */
 
@@ -3019,6 +3026,7 @@ img.portfolio {
 			z-index: 2;
 			display: block;
 		}
+
 
 	#header-wrapper {
 		position: relative;
